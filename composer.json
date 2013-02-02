@@ -1,0 +1,17 @@
+{
+    "name": "tomphp/whoislookup",
+    "autoload": {
+        "psr-0": {
+            "WhoisLookup\\": "src/"
+        }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/tomphp/BasicSocket"
+        }
+    ],
+    "require": {
+        "tomphp/basicsocket": "dev-master"
+    }
+}
