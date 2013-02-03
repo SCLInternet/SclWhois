@@ -19,5 +19,8 @@
         "psr-0": {
             "WhoisLookup\\": "src/"
         }
+    },
+    "require-dev": {
+        "phpmd/phpmd" : "1.4.0"
     }
 }
