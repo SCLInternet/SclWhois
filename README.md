@@ -3,6 +3,8 @@ WHOIS Server Lookup Library
 
 Performs a whois lookup on a given domain name.
 
+[![Build Status](https://travis-ci.org/tomphp/WhoisLookup.png?branch=master)](https://travis-ci.org/tomphp/WhoisLookup)
+
 Requires
 --------
 
