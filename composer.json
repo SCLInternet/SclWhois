@@ -1,17 +1,23 @@
 {
     "name": "tomphp/whoislookup",
+    "description": "Library for performing whois lookups on domain names",
+    "type": "library",
+    "license": "GPL-3.0",
+    "homepage": "https://github.com/tomphp/WhoisLookup",
+    "authors": [
+        {
+            "name": "Tom Oram",
+            "email": "tom@x2k.co.uk",
+            "homepage": "http://github.com/tomphp"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0",
+        "tomphp/basicsocket": "dev-master"
+    }
     "autoload": {
         "psr-0": {
             "WhoisLookup\\": "src/"
         }
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/tomphp/BasicSocket"
-        }
-    ],
-    "require": {
-        "tomphp/basicsocket": "dev-master"
-    }
 }
