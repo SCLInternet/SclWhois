@@ -76,7 +76,7 @@ class DomainLookup
      * @param string $domain
      *
      * @return string
-     * 
+     *
      * @throws UnknownTldException
      */
     public function getWhoisServer($domain)
@@ -98,7 +98,7 @@ class DomainLookup
      * @param string $domain
      *
      * @return string
-     * 
+     *
      * @throws UnknownTldException
      */
     public function lookup($domain)
@@ -108,7 +108,7 @@ class DomainLookup
         while (preg_match_all('/.*Whois Server: (.*)/', $result, $matches)) {
             $server = array_pop($matches[1]);
 
-            if($server) {
+            if ($server) {
                 $result = $this->queryServer($domain, $server);
             }
         }
