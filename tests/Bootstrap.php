@@ -11,4 +11,4 @@ if (!($loader = @include_once __DIR__ . '/../vendor/autoload.php')) {
 }
 
 /* var $loader \Composer\Autoload\ClassLoader */
-$loader->add('src\\', __DIR__);
+$loader->add('WhoisLookup\\', __DIR__ . '/src');
