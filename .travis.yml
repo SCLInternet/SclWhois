@@ -11,5 +11,5 @@ before_script:
 
 script:
   - phpunit
-  - phpcs --standard=psr2 src
+  - vendor/bin/phpcs --standard=psr2 src
   - vendor/bin/phpmd src text codesize
