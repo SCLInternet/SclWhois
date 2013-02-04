@@ -2,7 +2,7 @@
     "name": "tomphp/whoislookup",
     "description": "Library for performing whois lookups on domain names",
     "type": "library",
-    "license": "GPL-3.0",
+    "license": "MIT",
     "homepage": "https://github.com/tomphp/WhoisLookup",
     "authors": [
         {
