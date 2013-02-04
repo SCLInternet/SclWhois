@@ -16,7 +16,7 @@ Add the following to your `composer.json` file
 ```json
 {
     "require": {
-        "tomphp/whoislookup": "dev-master"
+        "sclinternet/scl-whois": "dev-master"
     }
 }
 ```
