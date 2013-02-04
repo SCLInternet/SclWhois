@@ -1,9 +1,9 @@
 {
-    "name": "tomphp/whoislookup",
+    "name": "sclinternet/scl-whois",
     "description": "Library for performing whois lookups on domain names",
     "type": "library",
     "license": "MIT",
-    "homepage": "https://github.com/tomphp/WhoisLookup",
+    "homepage": "https://github.com/SCLInternet/SclWhois",
     "authors": [
         {
             "name": "Tom Oram",
@@ -13,11 +13,11 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "tomphp/basicsocket": "dev-master"
+        "sclinternet/scl-socket": "dev-master"
     },
     "autoload": {
         "psr-0": {
-            "WhoisLookup\\": "src/"
+            "SclWhois\\": "src/"
         }
     },
     "require-dev": {

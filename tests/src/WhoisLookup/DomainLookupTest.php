@@ -1,17 +1,17 @@
 <?php
 /**
- * WhoisLookup library (https://github.com/tomphp/WhiosLookup)
+ * SclWhois library (https://github.com/SCLInternet/SclWhois)
  *
- * @link https://github.com/tomphp/BasicSocket for the canonical source repository
+ * @link https://github.com/SCLInternet/SclWhois for the canonical source repository
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
-namespace WhoisLookup;
+namespace SclWhois;
 
-use BasicSocket\SocketInterface;
+use SclSocket\SocketInterface;
 
 /**
- * Test for {@see \WhoisLookup\DomainLookup}
+ * Test for {@see \SclWhois\DomainLookup}
  *
  * @author Tom Oram <tom@scl.co.uk>
  */
@@ -35,13 +35,13 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
      */
     protected function setUp()
     {
-        $this->socket = $this->getMock('BasicSocket\SocketInterface');
+        $this->socket = $this->getMock('SclSocket\SocketInterface');
 
         $this->whois = new DomainLookup($this->socket);
     }
 
     /**
-     * @expectedException \WhoisLookup\Exception\UnknownTldException
+     * @expectedException \SclWhois\Exception\UnknownTldException
      */
     public function testBadTld()
     {
@@ -49,7 +49,7 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \WhoisLookup\DomainLookup::addServer
+     * @covers \SclWhois\DomainLookup::addServer
      */
     public function testAddServer()
     {
@@ -60,7 +60,7 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \WhoisLookup\DomainLookup::queryServer
+     * @covers \SclWhois\DomainLookup::queryServer
      */
     public function testQueryServer()
     {

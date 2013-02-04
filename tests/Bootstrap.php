@@ -1,8 +1,8 @@
 <?php
 /**
- * WhoisLookup library (https://github.com/tomphp/WhiosLookup)
+ * SclWhois library (https://github.com/SCLInternet/SclWhois)
  *
- * @link https://github.com/tomphp/BasicSocket for the canonical source repository
+ * @link https://github.com/SCLInternet/SclWhois for the canonical source repository
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
@@ -11,4 +11,4 @@ if (!($loader = @include_once __DIR__ . '/../vendor/autoload.php')) {
 }
 
 /* var $loader \Composer\Autoload\ClassLoader */
-$loader->add('WhoisLookup\\', __DIR__ . '/src');
+$loader->add('SclWhois\\', __DIR__ . '/src');

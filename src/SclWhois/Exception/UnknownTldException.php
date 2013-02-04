@@ -1,11 +1,11 @@
 <?php
 /**
- * WhoisLookup library (https://github.com/tomphp/WhiosLookup)
+ * SclWhois library (https://github.com/SCLInternet/SclWhois)
  *
- * @link https://github.com/tomphp/BasicSocket for the canonical source repository
+ * @link https://github.com/SCLInternet/SclWhois for the canonical source repository
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
-namespace WhoisLookup\Exception;
+namespace SclWhois\Exception;
 
 /**
  * Exception for when a domain is looked up with an unknown TLD.
