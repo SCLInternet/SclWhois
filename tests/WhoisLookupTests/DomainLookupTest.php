@@ -6,9 +6,10 @@
  * @license http://opensource.org/licenses/MIT The MIT License (MIT)
  */
 
-namespace SclWhois;
+namespace SclWhoisTests;
 
 use SclSocket\SocketInterface;
+use SclWhois\DomainLookup;
 
 /**
  * Test for {@see \SclWhois\DomainLookup}
@@ -41,7 +42,8 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @expectedException \SclWhois\Exception\UnknownTldException
+     * @covers SclWhois\DomainLookup::queryServer
+     * @expectedException SclWhois\Exception\UnknownTldException
      */
     public function testBadTld()
     {
@@ -49,7 +51,9 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \SclWhois\DomainLookup::addServer
+     * @covers SclWhois\DomainLookup::queryServer
+     * @covers SclWhois\DomainLookup::addServer
+     * @covers SclWhois\DomainLookup::__construct
      */
     public function testAddServer()
     {
@@ -60,7 +64,9 @@ class DomainLookupTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * @covers \SclWhois\DomainLookup::queryServer
+     * @covers SclWhois\DomainLookup::queryServer
+     * @covers SclWhois\DomainLookup::getWhoisServer
+     * @covers SclWhois\DomainLookup::getTld
      */
     public function testQueryServer()
     {

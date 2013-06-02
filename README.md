@@ -1,6 +1,9 @@
 WHOIS Server Lookup Library
 ===========================
 
+[![Build Status](https://travis-ci.org/SCLInternet/SclWhois.png?branch=master)](https://travis-ci.org/SCLInternet/SclWhois)
+[![Coverage Status](https://coveralls.io/repos/SCLInternet/SclWhois/badge.png)](https://coveralls.io/r/SCLInternet/SclWhois)
+
 Performs a whois lookup on a given domain name.
 
 Requires
