@@ -25,14 +25,14 @@ class DomainLookup
      *
      * @var array
      */
-    private $server = array();
+    protected $server = array();
 
     /**
      * The socket connection object.
      *
      * @var SocketInterface
      */
-    private $socket;
+    protected $socket;
 
     /**
      * Pulls in the default list of servers.
@@ -64,7 +64,7 @@ class DomainLookup
      *
      * @return string
      */
-    private function getTld($domain)
+    protected function getTld($domain)
     {
         $parts = explode('.', $domain);
         return array_pop($parts);
